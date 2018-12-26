@@ -14,8 +14,31 @@
 
 }
 
+.navbar-header {
+	background-color: black;
+}
+
+
+#but{
+	border: 1px solid white;
+
+}
+
 .col-md-6 {
 	padding-bottom:20px;
+}
+
+.chicken,.beef,.sushi{
+	border: 1px solid white;
+}
+
+
+div {
+    display: block;
+}
+
+*{
+	box-sizing: border-box;
 }
 
 li {
