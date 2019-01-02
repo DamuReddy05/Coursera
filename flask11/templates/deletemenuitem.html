@@ -1,0 +1,17 @@
+
+{% include 'home.html' %}
+
+{% block title %}
+<h1> Are you sure you want to delete {{item.name}}</h1>
+{% endblock title %}
+
+{% block content %}
+
+<form action="{{ url_for('deleteMenuItem', restaurant_id=item.restaurant_id, menu_id=item.id)}}" method = 'post'>
+
+<input type='submit', value = 'Delete'>
+
+</form>
+
+<a href = "{{ url_for('restaurantMenu', restaurant_id = item.restaurant_id)}}"> Cancel </a>
+{% endblock content %}

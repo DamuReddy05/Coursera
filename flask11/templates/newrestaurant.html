@@ -1,0 +1,15 @@
+{% include 'home.html' %}
+{%block title %}
+
+	<title>New Restaurant</title>
+
+	{% endblock title %}
+
+{% block content %}
+	<form action="{{ url_for('newRestaurant') }}" method="post">
+		<h2>Enter restaurant name:</h2>
+		<input type="text" name="name" placeholder="restaurant name">
+		<input type="submit" name="submit">
+		
+	</form>
+{% endblock content %}

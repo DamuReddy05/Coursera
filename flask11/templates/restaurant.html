@@ -1,0 +1,29 @@
+
+{% include "home.html" %}
+{% block content %}
+
+
+{% with messeges = get_flashed_messages() %}
+    {% if messeges %}
+      <ul>
+      	{% for messege in messeges %}
+      	  <li>{{ messege}}</li>
+      </ul>
+      {% endfor %}
+
+      {% endif %}
+      {% endwith%}
+
+
+	<h1>Restaurants are</h1>
+	<a href="{{ url_for('newRestaurant') }}">new restaurant</a>
+	{% for i in restaurant %}
+
+	 <div>
+	 	<a href="{{ url_for('restaurantMenu', restaurant_id=i.id) }}"> <h3><span> {{ i.name }} <span>-></span> <span>{{ i.id }}</span> </span> </h3>
+	 	</a>
+	 </div>
+
+	{% endfor %}
+
+	{%endblock content %}
