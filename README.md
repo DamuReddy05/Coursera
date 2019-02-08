@@ -16,8 +16,8 @@ This repository contains all of the source code used in the course called HTML, 
 
 # Outputs :
 
-* [Module-2]()
-* [Module-3]()
-* [Module-4]()
-* [Module-5]()
+* [Module-2](https://github.com/DamuReddy05/Coursera/tree/master/module2)
+* [Module-3](https://github.com/DamuReddy05/Coursera/tree/master/module3)
+* [Module-4](https://github.com/DamuReddy05/Coursera/tree/master/module4)
+* [Module-5](https://github.com/DamuReddy05/Coursera/tree/master/module5)
 
